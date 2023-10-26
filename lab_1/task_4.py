@@ -5,9 +5,6 @@ visitings = {
     "Общее количество": 0,
     "Уникальные посещения": 0
 }
-all_visitings = len(users)
-visitings["Общее количество"] = all_visitings
-unique_users = set(users)
-unique_visitings = len(unique_users)
-visitings["Уникальные посещения"] = unique_visitings
+visitings["Общее количество"] = len(users)
+visitings["Уникальные посещения"] = len(set(users))
 print(visitings)
